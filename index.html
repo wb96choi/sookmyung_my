@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="/images/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#">학과소개</a></li>
+                    <li><a href="#">교수진</a></li>
+                    <li><a href="#">무용단 소개</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">학과활동</a></li>
+                    <li><a href="#">무용과 행사</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="utilmenu">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">| Join</a></li>
+                    <li><a href="#"><div>KOR</div></a></li>
+                    <li><a href="#"><img src="/images/utilmenu.png" alt="utilmenu"></a></li>
+                </ul>
+            </nav>
+        </header>  <!--헤더-->
+
+        <section id="notice">
+            <div class="banner">
+                <p>sookmyung<br>women's university<br>department of dance</p>
+            </div>
+            <div class="Int">
+                <h1>Introduction</h1>
+                <div class="cont1">
+                    <div class="cont1_sub"><a href="#"><img src="/images/cont1.png" alt="1"></a>
+                        <div class="cont1ment">
+                            <h2>교육목표</h2>
+                            <h3>미래 문화예술을 이끌어갈 인재 양성</h3>
+                        </div>
+                    </div>
+                    <div class="cont1_sub"><a href="#"></a><img src="/images/cont2.png" alt="2"></a>
+                        <div class="cont1ment">
+                            <h2>교육과정</h2>
+                            <h3>다양한 장르의 실기 및 이론교육</h3>
+                        </div>
+                    </div>
+                    <div class="cont1_sub"><a href="#"><img src="/images/cont3.png" alt="3">
+                    </a>
+                        <div class="cont1ment">
+                            <h2>교수진</h2>
+                            <h3>숙명여자대학교 무용과 교수진</h3>
+                        </div>
+                    </div>
+                    <div class="cont1_sub"><a href="#"><img src="/images/cont4.png" alt="3"></a>
+                        <div class="cont1ment">
+                            <h2>학과활동</h2>
+                            <h3>창작 발표회 & 졸업 발표회</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notice">
+                <h1>Notice</h1>
+                <div class="cont2">
+                    <a href="#">
+                    <div class="cont2_sub">
+                        <img src="/images/not1.png" alt="not1">
+                        <div class="notment">
+                            <h2>공지사항</h2>
+                            <p class="read">View more</p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="cont2_sub">
+                        <img src="/images/not2.png" alt="not2">
+                        <div class="notment">
+                            <h2>열림마당</h2>
+                            <p class="read">View more</p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="cont2_sub">
+                        <img src="/images/not3.png" alt="not3">
+                        <div class="notment">
+                            <h2>1:1문의</h2>
+                            <p class="read">View more</p>
+                        </div>  
+                    </div>
+                    </a>
+                </div>  
+            </div>
+        </section> <!--notice-->
+
+        <footer>
+            <div class="footBanner">
+                <div class="fBment">
+                    <p>Social Networking Service of SMD</p>
+                    <a href="#"><p class="go">숙명여자대학교 무용과 SNS 바로가기</p></a>
+                </div>
+                <div class="fBsns">
+                    <a href="#">
+                        <img src="/images/instagram.png" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="/images/facebook.png" alt="facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyment">
+                    <p class="id"><a href="#">개인정보처리방침</a> | 이메일무단수집거부</p>
+                    <p>04308 서울특별시 용산구 청파로47나길 90 숙명여자대학교 새빛관 TEL : 02-710-9450 FAX : 02-710-9848</p>
+                    <p>Copyright  2022 Sookmyung Women's University. All rights reser</p>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="pop_up">
+            <header><p>NOTICE</p></header>
+            <h1>학사</h1>
+            <p class="subtitle">2022-2 학부 휴학 및 복학 안내</p>
+            <p class="cont">2022학년도 2학기 학부생의 휴학 및 복학 신청일정 및 신청방법을 다음과..</p>
+            <a href="#" class="close">닫기</a>
+        </div>
+
+    </div>
+
+    <script>
+        $('.close').click(function(){
+            $('.pop_up').css('display','none');
+        });
+    </script>
+    <script>
+        $(function(){
+            $('a').click(function(e){
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>
